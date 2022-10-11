@@ -1,0 +1,57 @@
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+  font-family: sans-serif;
+}
+.contenedor{
+  height: 100vh;
+  background-color: #555555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: mostrar 1s linear;
+}
+
+.modal{
+  width: 500px;
+  height: 200px;
+  background-image: linear-gradient(to bottom right, #cee5d0, #fcf8e8);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.botones{
+  margin: 20px;
+  width: 100%;
+}
+.botones button{
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #f7f2f2;
+}
+
+@keyframes mostrar{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes desaparecer{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
